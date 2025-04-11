@@ -1,0 +1,99 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1dcdc;
+    color: rgb(13, 12, 12);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+  
+  .navbar-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .site-tagline {
+    font-size: 0.9rem;
+    color: #2a2424;
+    margin: 0;
+  }
+  
+  .navbar-right .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 110px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown li {
+    padding: 8px 15px;
+  }
+  
+  .dropdown li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+
+  .nav-menu a {
+    color: inherit;          /* 使用父元素的颜色 */
+    text-decoration: none;   /* 去掉下划线 */
+    display: block;          /* 让 a 标签撑满 li，就像 li 一样好点击 */
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .lang-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: rgb(13, 12, 12);
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 8px 12px;
+    outline: none; /* 👉 去掉焦点时的边框 */
+  }
+  
+  .lang-toggle-btn:focus {
+    outline: none; /* 🔍 确保点击后也没有边框 */
+  }
+  
+  .lang-toggle-btn:hover {
+    text-decoration: underline;
+  }
+  
