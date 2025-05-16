@@ -9,7 +9,7 @@ function Navbar() {
     <div>
       <header className="navbar">
         <div className="navbar-left">
-          <h1 className="site-title">{language === 'zh' ? '主望教会' : '주망교회'}</h1>
+          <h1 className="site-title">{language === 'zh' ? '主望教会' : '갓즈드림교회 '}</h1>
           <p className="site-tagline">
             {language === 'zh' ? '中韩教会 | 多文化教会' : '중한교회 | 다문화 교회'}
           </p>
