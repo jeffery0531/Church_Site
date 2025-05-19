@@ -1,6 +1,5 @@
 # Logs
-logs
-*.log
+logsog
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -20,5 +19,6 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
+*.l
 *.sln
 *.sw?

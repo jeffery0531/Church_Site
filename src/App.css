@@ -23,7 +23,11 @@ section p {
   flex-direction: column; /* 垂直排列 */
   align-items: center;     /* 水平居中 */
   text-align: center;      /* 文字居中 */
-   margin: 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;  /* 你想限制的最大显示宽度 */
+
 }
+
 
 
