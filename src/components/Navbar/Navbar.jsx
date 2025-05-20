@@ -28,7 +28,6 @@ function Navbar() {
               {language === 'zh' ? '聚会时间' : '예배 시간'}
               <ul className="dropdown">
                 <li><a href="#worship">{language === 'zh' ? '主日崇拜' : '주일예배'}</a></li>
-                <li><a href="#bible-study">{language === 'zh' ? '查经小组' : '성경공부'}</a></li>
               </ul>
             </li>
             <li className="nav-item">

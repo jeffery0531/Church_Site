@@ -65,13 +65,15 @@ function App() {
 
       <section id="worship">
         <h2>{t.worship.title}</h2>
-        <p>{t.worship.content}</p>
+        
+         <div className="team-container">
+          <br /><br />
+          
+          {t.worship.content}
+      </div>
       </section>
 
-      <section id="bible-study">
-        <h2>{t.bible.title}</h2>
-        <p>{t.bible.content}</p>
-      </section>
+
 
 
       <Footer t={t} />

@@ -6,9 +6,14 @@ import { Navigation } from 'swiper/modules';
 
 
 const images = [
-  '/images/photo1.jpg',
-  '/images/photo2.jpg',
-  '/images/photo3.jpg',
+  '/images/photo1.jpeg',
+  '/images/photo2.jpeg',
+  '/images/photo3.jpeg',
+  '/images/photo4.jpeg',
+  '/images/photo5.jpeg',
+  '/images/photo6.jpeg',
+  '/images/photo7.jpeg',
+  '/images/photo8.jpeg'
 ];
 
 export default function PhotoSlider() {
