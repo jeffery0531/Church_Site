@@ -21,7 +21,7 @@ function Navbar() {
               {language === 'zh' ? '关于我们' : '우리에 대해'}
               <ul className="dropdown">
                 <li><a href="#about">{language === 'zh' ? '我们的异象' : '우리의 비전'}</a></li>
-                <li><a href="#team">{language === 'zh' ? '教牧团队' : '목회팀'}</a></li>
+                <li><a href="#team">{language === 'zh' ? '牧者介绍' : '목회팀'}</a></li>
               </ul>
             </li>
             <li className="nav-item">
@@ -30,6 +30,17 @@ function Navbar() {
                 <li><a href="#worship">{language === 'zh' ? '主日崇拜' : '주일예배'}</a></li>
               </ul>
             </li>
+
+             <li className="nav-item">
+              <a
+                href="https://www.youtube.com/@God_dream_church" // 替换为你的真实频道链接
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {language === 'zh' ? 'GDC TV 频道' : 'GDC TV 채널'}
+              </a>
+            </li>
+
             <li className="nav-item">
               {language === 'zh' ? '联系我们' : '문의하기'}
               <ul className="dropdown">
