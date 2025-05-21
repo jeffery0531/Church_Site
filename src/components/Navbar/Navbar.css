@@ -14,10 +14,11 @@
 }
 
   
-  .navbar-left {
-    display: flex;
-    flex-direction: column;
-  }
+.navbar-left {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+}
   
   .site-title {
     font-size: 1.5rem;

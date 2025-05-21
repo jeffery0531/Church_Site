@@ -8,12 +8,18 @@ function Navbar() {
   return (
     <div>
       <header className="navbar">
-        <div className="navbar-left">
-          <h1 className="site-title">{language === 'zh' ? '主望教会' : '갓즈드림교회 '}</h1>
-          <p className="site-tagline">
-            {language === 'zh' ? '中韩教会 | 多文化教会' : '중한교회 | 다문화 교회'}
-          </p>
-        </div>
+        
+    <div className="navbar-left flex items-center">
+      <img
+  src="/images/Logo.png"
+  alt="教会Logo"
+  style={{ height: '32px', width: '32px', marginRight: '4px', marginLeft: '4px' }}
+/>
+      <h1 className="site-title text-xl font-bold">
+        {language === 'zh' ? '主望教会' : '갓즈드림교회'}
+      </h1>
+
+    </div>
 
         <nav className="navbar-right">
           <ul className="nav-menu">
@@ -37,7 +43,7 @@ function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {language === 'zh' ? 'GDC TV 频道' : 'GDC TV 채널'}
+                {language === 'zh' ? 'GDC TV' : 'GDC TV'}
               </a>
             </li>
 

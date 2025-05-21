@@ -43,15 +43,35 @@ function App() {
        }}>Welcome</span>
      </h1>
 
-     <section id="about">
-        <h2>{t.about.title}</h2>
-        <br /><br />
+     <section id="about" className="about-section">
+     <div className="bg-blur" />
+     <div className="content">
+     
+      <h2 className="about-title">{t.about.title}</h2>
+     <br /><br />
 
-        <p dangerouslySetInnerHTML={{ __html: t.about.content.replace(/\n/g, '<br />') }} />
-      </section>
+     <p dangerouslySetInnerHTML={{ __html: t.about.content.replace(/\n/g, '<br />') }} />
+
+     </div>
+     </section>
 
       <section id="team">
-      <h2>{t.team.title}</h2>
+      
+
+      <h2 style={{
+       textAlign: 'center',
+       fontWeight: 'bold',
+       fontSize: '2em',
+       borderBottom: '2px solid #333',
+       lineHeight: '0.1em',
+       margin: '40px 0',
+       color: '#333'
+     }}>
+       <span style={{
+         background: '#fff',
+         padding: '0 10px'
+       }}>{t.team.title}</span>
+     </h2>
       <div className="team-container">
           <br /><br />
           
@@ -64,8 +84,21 @@ function App() {
       
 
       <section id="worship">
-        <h2>{t.worship.title}</h2>
-        
+    
+        <h2 style={{
+       textAlign: 'center',
+       fontWeight: 'bold',
+       fontSize: '2em',
+       borderBottom: '2px solid #333',
+       lineHeight: '0.1em',
+       margin: '40px 0',
+       color: '#333'
+     }}>
+       <span style={{
+         background: '#fff',
+         padding: '0 10px'
+       }}>{t.worship.title}</span>
+     </h2>
          <div className="team-container">
           <br /><br />
           
